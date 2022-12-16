@@ -1,8 +1,8 @@
-let i = 5;
+const pessoa = {
+    nome: 'jean',
+    idade: 25,
+};
 
-while (i >=1){
-    if (i % 2 !==0){
-        console.log(i);
-    }
-    i--;
+for (let chave in pessoa){
+    console.log(chave,pessoa['nome']);
 }
